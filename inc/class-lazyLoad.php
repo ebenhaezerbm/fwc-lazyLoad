@@ -70,7 +70,7 @@ class FWClazyLoad
 	/**
 	 * Filter replace image 'src' Arrtibutes to 'data-src'
 	 */
-	public function modify_featured_image_src_attribute( $html, $post_id, $post_image_id ) {
+	public function modify_featured_image_src_attribute($html, $post_id, $post_image_id) {
 		if ( is_admin() ) 
 			return $html;
 
@@ -84,7 +84,7 @@ class FWClazyLoad
 		return $html;
 	}
 
-	public function entry_content_image_src_filter( $content ) {
+	public function entry_content_image_src_filter($content) {
 		if ( is_admin() ) 
 			return $content;
 
@@ -105,7 +105,7 @@ class FWClazyLoad
 	/**
 	 * Filter replace image 'alt' Arrtibutes to 'data-alt'
 	 */
-	public function modify_featured_image_alt_attribute( $html, $post_id, $post_image_id ) {
+	public function modify_featured_image_alt_attribute($html, $post_id, $post_image_id) {
 		if ( is_admin() ) 
 			return $html;
 
@@ -117,7 +117,7 @@ class FWClazyLoad
 		return $html;
 	}
 
-	public function entry_content_image_alt_filter( $content ) {
+	public function entry_content_image_alt_filter($content) {
 		if ( is_admin() ) 
 			return $content;
 
